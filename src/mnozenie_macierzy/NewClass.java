@@ -31,12 +31,25 @@ public class NewClass
             System.out.println();
         }
 
+
+        //Mnozenie macierzy
+        for (i = 0; i < c.length; i++)
+        {
+            for (j = 0; j < c.length; j++)
+            {
+                for (int k = 0; k < c.length; k++)
+                {
+                    c[i][j] += a[i][k] * b[k][j];
+                }
+            }
+        }
+        System.out.println();
+
         System.out.println("\nmacierz C = A * B ");
         for (i = 0; i < c.length; i++)
         {
             for (j = 0; j < c.length; j++)
             {
-                c[i][j] = a[i][j] * b[i][j];
                 System.out.print(c[i][j] + "\t");
             }
             System.out.println();
